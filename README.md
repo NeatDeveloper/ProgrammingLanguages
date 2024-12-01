@@ -1,15 +1,5 @@
-# cpp
+# Решения находятся в папке ./src/modules.
 
-To install dependencies:
+Описаны последние 3 модуля.
 
-```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run src/main.cpp
-```
-
-This project was created using `bun init` in bun v1.1.33. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+Версии заданий с нижним подчёркиванием(_A) варианты для вас, но можете брать код и без нижнего подчёркивания.
