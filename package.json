@@ -1,0 +1,14 @@
+{
+    "name": "cpp",
+    "module": "src/main.cpp",
+    "type": "module",
+    "devDependencies": {
+        "@types/bun": "latest"
+    },
+    "peerDependencies": {
+        "typescript": "^5.7.2"
+    },
+    "scripts": {
+        "gen": "bun --bun run ./src/gen.ts"
+    }
+}
