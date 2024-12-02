@@ -1,0 +1,9 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        ".env": "env",
+        "*.bru": "bruno",
+        ".env*": "dotenv",
+        "iostream": "cpp"
+    }
+}
