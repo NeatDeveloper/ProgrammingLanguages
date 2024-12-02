@@ -1,4 +1,4 @@
 build
 bun.lockb
 node_modules
-*/_*.cpp
+.vscode
