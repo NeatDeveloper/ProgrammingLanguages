@@ -2,50 +2,50 @@
 #include <deque>
 #include <string>
 
+using namespace std;
+
 int main() {
-    std::deque<int> deque;
-    std::string command;
+    deque<int> myDeque;
+    string command;
 
-    while (true) {
-        std::cin >> command;
+    while(true) {
+        cin >> command;
 
-        if (command == "push_back") {
+        if(command == "Bye") break;
 
-            int value;
-            std::cin >> value;
-            deque.push_back(value);
+        if(command == "push_back") {
+            int number;
 
-        } else if (command == "push_front") {
+            cin >> number;
 
-            int value;
-            std::cin >> value;
-            deque.push_front(value);
-
-        } else if (command == "pop_back") {
-
-            if (deque.empty())  std::cout << "DEQUE IS EMPTY!" << std::endl;
-            else deque.pop_back();
-
-        } else if (command == "pop_front") {
-
-            if (deque.empty()) std::cout << "DEQUE IS EMPTY!" << std::endl;
-            else deque.pop_back();
-
-        } else if (command == "show_front") {
-
-            if (deque.empty()) std::cout << "DEQUE IS EMPTY!" << std::endl;
-             else std::cout << deque.front() << std::endl;
-
-        } else if (command == "show_back") {
-
-            if (deque.empty()) std::cout << "DEQUE IS EMPTY!" << std::endl;
-            else std::cout << deque.back() << std::endl;
-
-        } else if (command == "Bye") {
-
-            std::cout << "BYE!" << std::endl;
-            break;
+            myDeque.push_back(number);
+            continue;
         }
+        if(command == "push_front") {
+            int number;
+
+            cin >> number;
+
+            myDeque.push_front(number);
+            continue;
+        }
+
+        if(myDeque.empty()) {
+            cout << "DEQUE IS EMPTY!" << '\n';
+            continue;
+        }
+
+        if(command == "pop_back")
+            myDeque.pop_back();
+
+        if(command == "pop_front")
+            myDeque.pop_front();
+
+        if(command == "show_front")
+            cout << myDeque.front() << '\n';
+
+        if(command == "show_back")
+            cout << myDeque.back() << '\n';
     }
 
     return 0;

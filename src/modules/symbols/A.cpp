@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 int main() {
@@ -6,11 +7,10 @@ int main() {
 
     std::cin >> input;
 
-    if(input >= 48 && input <= 57) {
+    if (input >= 48 && input <= 57)
         cout << "yes" << endl;
-    } else {
+    else
         cout << "no" << endl;
-    }
 
     return 0;
 }

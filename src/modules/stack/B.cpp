@@ -3,7 +3,7 @@
 
 using namespace std;
 
-bool isCorrectBracketSequence(const string& sequence) {
+bool isCorrectBracketSequence(const string &sequence) {
     stack<char> bracket_stack;
 
     for (char bracket : sequence) {
@@ -12,9 +12,11 @@ bool isCorrectBracketSequence(const string& sequence) {
             continue;
         }
 
-        if (bracket_stack.empty()) return false;
+        if (bracket_stack.empty())
+            return false;
 
         char last_bracket = bracket_stack.top();
+
         bracket_stack.pop();
 
         if (
